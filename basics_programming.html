@@ -4,9 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
         
-    <title>تعلم البرمجة | منصة القبة التعليمية</title>
-    <meta name="description" content="مسار تعلم البرمجة من الصفر وأساسيات لغة C++ للمبتدئين - منصة القبة التعليمية.">
+    <title>تعلم البرمجة وأساسيات C++ | منصة القبة التعليمية</title>
+    <meta name="description" content="مسار تعلم البرمجة من الصفر وأساسيات لغة C++ للمبتدئين - منصة القبة التعليمية بإشراف المهندس محمد عصام الفيومي.">
+    <meta name="keywords" content="تعلم البرمجة, لغة C++, ما قبل البرمجة, أساسيات البرمجة, منصة القبة التعليمية, المهندس محمد عصام">
     <meta name="author" content="المهندس محمد عصام الفيومي">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical Link -->
+    <link rel="canonical" href="https://egy-1.github.io/alqabuh/basics_programming.html">
+
+    <!-- Open Graph Tags for Social Media SEO -->
+    <meta property="og:title" content="تعلم البرمجة وأساسيات C++ | منصة القبة التعليمية">
+    <meta property="og:description" content="مسار تعلم البرمجة من الصفر وأساسيات لغة C++ للمبتدئين على منصة القبة التعليمية.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://egy-1.github.io/alqabuh/basics_programming.html">
+    <meta property="og:image" content="https://egy-1.github.io/alqabuh/images/logo.png">
+    <meta property="og:site_name" content="منصة القبة التعليمية">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -140,11 +153,10 @@
             box-shadow: 0 6px 20px rgba(0,0,0,0.4);
         }
 
-        /* تنسيق الـ iframe المباشر مثل الصورة تماماً */
         .direct-iframe-container {
             position: relative;
             width: 100%;
-            padding-bottom: 56.25%; /* نسبة 16:9 */
+            padding-bottom: 56.25%;
             background: #000;
         }
 
@@ -232,7 +244,7 @@
         <div class="container header-container">
             <div class="logo-area">
                 <a href="index.html">
-                    <img src="images/logo.png" alt="منصة القبة" class="logo-img">
+                    <img src="images/logo.png" alt="منصة القبة التعليمية" class="logo-img">
                     <span class="logo-text">منصة القبة التعليمية</span>
                 </a>
             </div>
@@ -266,7 +278,7 @@
 
         <div class="prog-header-box">
             <h1>مسار تعلم البرمجة من الصفر</h1>
-            <p dir="rtl">أولا ستبدأ بقسم ما قبل البرمجه عبارة عن 10 فيديوهات وبعد تعلمهم عليك أن تبدأ بكورس اساسيات البرمجه بلغة C++ عبارة عن 10 فيديوهات على المنصة وباقي الفيديوهات على قناة أسامة الزيرو</p>
+            <p dir="rtl">أولا ستبدأ بقسم ما قبل البرمجه عبارة عن 10 فيديوهات وبعد تعلمهم عليك أن تبدأ بكورس اساسيات البرمجه بلغة C++ عبارة عن 10 فيديوهات على منصة القبة التعليمية وباقي الفيديوهات على قناة أسامة الزيرو</p>
         </div>
 
         <!-- تبويبات الأقسام -->
@@ -279,12 +291,12 @@
             </button>
         </div>
 
-        <!-- شبكة الفيديوهات (تعمل بالـ iframe المباشر) -->
+        <!-- شبكة الفيديوهات -->
         <div class="videos-grid" id="videosGridContainer"></div>
 
         <!-- صندوق المتابعة لقناة أسامة الزيرو -->
         <div class="external-footer-box">
-            <p>هل أنهيت جميع الدروس على المنصة وترغب بالتعمق أكثر؟ تابع القناة الرسمية للبشمهندس أسامة الزيرو:</p>
+            <p>هل أنهيت جميع الدروس على منصة القبة التعليمية وترغب بالتعمق أكثر؟ تابع القناة الرسمية للبشمهندس أسامة الزيرو:</p>
             <a href="https://youtube.com/@elzerowebschool?si=LFC8ojX5WPM41Zjb" target="_blank" class="yt-channel-link">
                 <i class="fab fa-youtube"></i>
                 <span>قناة Elzero Web School</span>
@@ -399,7 +411,6 @@
                 const card = document.createElement("div");
                 card.className = "video-card";
                 
-                // استخدام وسوم iframe المباشرة تماماً مثل الصورة التي أرسلتها
                 card.innerHTML = `
                     <div class="direct-iframe-container">
                         <iframe src="https://www.youtube.com/embed/${item.id}" title="${item.title}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
