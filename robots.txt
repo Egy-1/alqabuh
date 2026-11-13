@@ -3,8 +3,8 @@ Allow: /
 Disallow: /admin/
 Disallow: /private/
 
-Sitemap: (ضع الرابط)/sitemap.xml
+Sitemap: https://egy-1.github.io/alqabuh/sitemap.xml
 
 # تحسين SEO
-Host: (ضع الرابط )
+Host: https://egy-1.github.io/alqabuh
 Crawl-delay: 2
