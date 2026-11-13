@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        
+    <title>مكتبة التكنولوجيا | منصة القبة التعليمية</title>
+    <meta name="description" content="مكتبة التكنولوجيا التفاعلية من منصة القبة التعليمية - استكشف كتب الحاسوب والتقنية بصفحات تفاعلية وتجربة فريدة.">
+    <meta name="author" content="المهندس محمد عصام الفيومي">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Reem+Kufi:wght@500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- ربط ملفات الـ CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tech.css">
+
+    <!-- تنسيق زر تعلم البرمجة -->
+    <style>
+        .qb-code-wrap{display:flex;justify-content:center;margin:20px 0 28px}
+        .qb-code-btn{display:inline-flex;align-items:center;gap:12px;padding:13px 32px;border-radius:999px;background:linear-gradient(135deg,#2563eb,#7c3aed);color:#fff;font-family:'Cairo',sans-serif;font-weight:700;font-size:1.05rem;text-decoration:none;box-shadow:0 8px 22px rgba(37,99,235,.35);transition:transform .2s ease,box-shadow .2s ease}
+        .qb-code-btn:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(124,58,237,.45)}
+        .qb-code-btn:focus-visible{outline:3px solid #fff;outline-offset:3px}
+        .qb-code-btn i{font-size:1.15rem}
+        @media (max-width:600px){.qb-code-btn{width:100%;justify-content:center;font-size:1rem}.qb-code-wrap{padding:0 4px}}
+        @media (prefers-reduced-motion:reduce){.qb-code-btn{transition:none}.qb-code-btn:hover{transform:none}}
+    </style>
+    
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <meta name="theme-color" content="#0b0f19">
+</head>
+<body class="dark-mode">
+
+    <!-- الهيدر العلوي الموحد -->
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo-area">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="منصة القبة" class="logo-img">
+                    <span class="logo-text">منصة القبة التعليمية</span>
+                </a>
+            </div>
+
+            <nav class="desktop-header-nav">
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="kids.html">الأساسيات</a></li>
+                    <li><a href="tech.html" class="active">التكنولوجيا</a></li>
+                    <li><a href="sociology.html">علم الاجتماع</a></li>
+                    <li><a href="literature-islam.html">الدين الاسلامي</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="tester.html" class="icon-action-btn" title="اختبر ذكاءك"><i class="fas fa-brain"></i></a>
+                <a href="history-egyptoin.html" class="icon-action-btn" title="مصر للمصريين"><i class="fas fa-landmark"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- قسم مكتبة التكنولوجيا -->
+    <section class="qb" id="tech-books" aria-labelledby="qb-h">
+      <div class="qb-in">
+        <h2 id="qb-h">مكتبة التكنولوجيا</h2>
+        <p class="qb-lead">اختر كتاباً ليُفتح أمامك، ثم اقلب صفحاته بالأزرار أو بالسحب.</p>
+
+        <!-- زر تعلم البرمجة -->
+        <div class="qb-code-wrap">
+          <a href="basics_programming.html" class="qb-code-btn">
+            <i class="fas fa-code" aria-hidden="true"></i>
+            <span>تعلم البرمجة</span>
+          </a>
+        </div>
+
+        <div class="qb-shelf" id="qbShelf"></div>
+      </div>
+    </section>
+
+    <!-- عارض الكتب المنبثق -->
+    <div class="qb-v" id="qbV" role="dialog" aria-modal="true" aria-label="قارئ الكتاب">
+      <div class="qb-bar"><b id="qbTitle"></b><button class="qb-x" id="qbX" type="button">إغلاق</button></div>
+      <div class="qb-st" id="qbSt"><div class="qb-sz wide" id="qbSz"><div class="qb-book" id="qbBook"></div></div></div>
+      <div class="qb-ctl">
+        <button id="qbPrev" type="button">السابق</button>
+        <span class="qb-ind" id="qbInd" aria-live="polite"></span>
+        <button id="qbNext" type="button">التالي</button>
+      </div>
+    </div>
+
+    <!-- الفوتر المحترف الموحد -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3>منصة القبة التعليمية</h3>
+                <p>منصة تعليمية مصرية رائدة تهدف لنشر الوعي ومحو الأمية وبناء عقول مستنيرة.</p>
+            </div>
+            
+            <div class="footer-col">
+                <h3>روابط سريعة</h3>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="kids.html">الأساسيات</a></li>
+                    <li><a href="tech.html">التكنولوجيا</a></li>
+                    <li><a href="sociology.html">علم الاجتماع</a></li>
+                    <li><a href="literature-islam.html">الدين الاسلامي</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col" id="social-widget">
+                <h3>تواصل مجتمعي</h3>
+                <div class="social-custom-list">
+                    <a href="https://www.facebook.com/share/1A6ZmYtVdX/" target="_blank" class="social-item facebook">
+                        <i class="fab fa-facebook-f"></i> <span>فيسبوك</span>
+                    </a>
+                    <a href="https://youtube.com/channel/UCWuaWYwaAXgtk9m1BdjxhRA" target="_blank" class="social-item youtube">
+                        <i class="fab fa-youtube"></i> <span>يوتيوب</span>
+                    </a>
+                    <a href="https://itopapp.page.link/android" target="_blank" class="social-item itop-app">
+                        <img src="images/itop.png" alt="I Top" class="itop-icon-img"> <span>تطبيق I Top</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-bar">
+            <p>جميع الحقوق محفوظة © <span id="year"></span> منصة القبة التعليمية</p>
+        </div>
+    </footer>
+
+    <!-- شريط التنقل السفلي للموبايل -->
+    <div class="bottom-nav-bar">
+        <a href="index.html" class="bottom-nav-item">
+            <i class="fas fa-home"></i>
+            <span>الرئيسية</span>
+        </a>
+        <a href="kids.html" class="bottom-nav-item">
+            <i class="fas fa-book-open"></i>
+            <span>الأساسيات</span>
+        </a>
+        <a href="tech.html" class="bottom-nav-item active">
+            <i class="fas fa-microchip"></i>
+            <span>التكنولوجيا</span>
+        </a>
+        <a href="sociology.html" class="bottom-nav-item">
+            <i class="fas fa-users"></i>
+            <span>المجتمع</span>
+        </a>
+        <a href="literature-islam.html" class="bottom-nav-item">
+            <i class="fas fa-mosque"></i>
+            <span>الإسلام</span>
+        </a>
+    </div>
+
+    <!-- السكربتات -->
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script src="js/main.js"></script>
+    <script src="js/tech.js"></script>
+</body>
+</html>

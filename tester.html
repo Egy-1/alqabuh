@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>أسئلة ذكاء | منصة القبة التعليمية</title>
+<meta name="description" content="اختبارات ذكاء قصيرة في الفضاء وتاريخ مصر والتاريخ الإسلامي والجغرافيا والرياضيات والعلوم على منصة القبة التعليمية.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Reem+Kufi:wght@500;700&display=swap" rel="stylesheet">
+<!-- ======={ START ICON }========= -->
+    <link rel="manifest" href="icon/site.webmanifest">
+    <link rel="icon" type="image/png" sizes="192x192" href="icon/web-app-manifest-192x192.png">
+    <link rel="apple-touch-icon" href="icon/web-app-manifest-192x192.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icon/favicon-96x96.png">
+    <link rel="icon" type="image/svg+xml" href="icon/favicon.svg">
+    <link rel="shortcut icon" href="icon/favicon.ico">
+<!-- ======={ END ICON }========= -->
+
+
+
+<style>
+:root{--lapis:#14305c;--sand:#f6f0e4;--paper:#fffdf8;--gold:#b58a1f;--ink:#1c2433;--muted:#5b6475;--line:#e3dac3;--ok:#1f8a4c;--bad:#c0392b}
+@media (prefers-color-scheme:dark){:root{--sand:#10182a;--paper:#17213a;--ink:#eef0f5;--muted:#a9b2c6;--line:#2c3856;--gold:#d9b24c;--ok:#3fbf78;--bad:#ef6b5b}}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Cairo',sans-serif;background:var(--sand);color:var(--ink);line-height:1.8;min-height:100vh;padding-bottom:env(safe-area-inset-bottom,0px)}
+:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+header{position:sticky;top:0;z-index:20;background:var(--lapis);border-bottom:3px solid var(--gold);padding:calc(10px + env(safe-area-inset-top,0px)) 20px 10px;display:flex;justify-content:space-between;align-items:center;gap:10px}
+.brand{font-family:'Reem Kufi',sans-serif;font-weight:700;font-size:1.15rem;color:#fff}
+.home{color:#fff;text-decoration:none;font-size:.88rem;border:1px solid rgba(255,255,255,.4);padding:3px 16px;border-radius:999px}
+.home:hover{background:rgba(255,255,255,.12)}
+.banner{background:var(--lapis);color:#fff;text-align:center;padding:26px 20px 34px;position:relative}
+.banner::after{content:"";position:absolute;inset:auto 0 0 0;height:5px;background:linear-gradient(90deg,var(--gold),#e9d9a8,var(--gold))}
+.logo{width:92px;height:92px;border-radius:50%;object-fit:cover;background:#fff;border:3px solid var(--gold);display:block;margin:0 auto 10px}
+.banner h1{font-family:'Reem Kufi',sans-serif;font-size:1.8rem;line-height:1.3}
+.banner p{color:#d7e0f2;font-size:.95rem}
+main{width:94%;max-width:640px;margin:26px auto 40px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:24px}
+h2{font-family:'Reem Kufi',sans-serif;color:var(--lapis);font-size:1.4rem}
+@media (prefers-color-scheme:dark){h2{color:var(--gold)}}
+.hint{color:var(--muted);font-size:.92rem;margin-top:2px}
+.cats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}
+.cat{font:inherit;text-align:start;cursor:pointer;background:var(--sand);color:var(--ink);border:1px solid var(--line);border-inline-start:6px solid var(--c);border-radius:8px;padding:12px 14px}
+.cat:hover{border-color:var(--c)}
+.cat b{display:block;font-size:1rem}
+.cat span{font-size:.8rem;color:var(--muted)}
+.top{display:flex;justify-content:space-between;align-items:center;font-size:.9rem;color:var(--muted);font-weight:600}
+.bar{height:6px;background:var(--line);border-radius:6px;margin:8px 0 18px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:var(--gold);transition:width .3s}
+#qt{font-size:1.2rem;line-height:1.7;margin-bottom:12px}
+.opt{display:flex;justify-content:space-between;align-items:center;width:100%;font:inherit;text-align:start;cursor:pointer;background:var(--paper);color:var(--ink);border:2px solid var(--line);border-radius:8px;padding:11px 14px;margin:8px 0}
+.opt:hover:not(:disabled){border-color:var(--gold)}
+.opt:disabled{cursor:default}
+.opt.ok{background:var(--ok);border-color:var(--ok);color:#fff}
+.opt.bad{background:var(--bad);border-color:var(--bad);color:#fff}
+.ctrl{display:flex;gap:8px;margin-top:18px}
+.b{flex:1;font:inherit;font-weight:600;cursor:pointer;border:0;border-radius:8px;padding:11px;background:var(--lapis);color:#fff}
+.b.alt{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.b:disabled{opacity:.45;cursor:default}
+.res{text-align:center}
+.res .n{font-family:'Reem Kufi',sans-serif;font-size:3.4rem;color:var(--gold);line-height:1.2}
+.res p{color:var(--muted);margin:6px 0 4px}
+@media (max-width:420px){.cats{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+  <span class="brand">منصة القبة التعليمية</span>
+  <a class="home" href="index.html">الرئيسية</a>
+</header>
+
+<div class="banner">
+  <img class="logo" src="images/profile.png" alt="المهندس محمد عصام الفيومي" onerror="this.style.display='none'">
+  <h1>أسئلة ذكاء</h1>
+  <p>المهندس محمد عصام الفيومي</p>
+</div>
+
+<main>
+  <div class="card" id="menu">
+    <h2>اختر قسماً</h2>
+    <p class="hint">عشرة أسئلة في كل قسم، وتظهر الإجابة الصحيحة بعد كل سؤال.</p>
+    <div class="cats" id="cats"></div>
+  </div>
+
+  <div class="card" id="quiz" hidden>
+    <div class="top"><span id="cn"></span><span id="qc"></span></div>
+    <div class="bar"><i id="pg"></i></div>
+    <h3 id="qt"></h3>
+    <div id="opts"></div>
+    <div class="ctrl">
+      <button class="b alt" id="prev" type="button">السابق</button>
+      <button class="b alt" id="back" type="button">الأقسام</button>
+      <button class="b" id="next" type="button" disabled>التالي</button>
+    </div>
+  </div>
+
+  <div class="card res" id="result" hidden>
+    <h2>انتهى الاختبار</h2>
+    <div class="n" id="score"></div>
+    <p id="msg"></p>
+    <div class="ctrl">
+      <button class="b alt" id="again" type="button">أعد المحاولة</button>
+      <button class="b" id="menuBtn" type="button">الأقسام</button>
+    </div>
+  </div>
+</main>
+
+<script>
+const CATS={
+space:{name:'الفضاء والكون',color:'#7c3aed',q:[
+{q:"حول أي كوكب يدور القمر تيتان؟",a:["المشتري","زحل","نبتون","المريخ"],c:1},
+{q:"ما الكوكب الذي يدور حول الشمس وهو «مستلقٍ على جنبه» لشدة ميل محوره؟",a:["أورانوس","الزهرة","زحل","المشتري"],c:0},
+{q:"ما اسم المجرة التي تنتمي إليها مجموعتنا الشمسية؟",a:["أندروميدا","درب التبانة","مسييه","سديم السرطان"],c:1},
+{q:"كم تبلغ تقريباً درجة حرارة سطح الشمس؟",a:["3000 درجة مئوية","5500 درجة مئوية","10000 درجة مئوية","15000 درجة مئوية"],c:1},
+{q:"أي كوكب في المجموعة الشمسية له أقصر يوم؟",a:["الأرض","المشتري","عطارد","المريخ"],c:1},
+{q:"أي كوكب يلقب بـ «توأم الأرض» لتقارب الحجم؟",a:["المريخ","عطارد","الزهرة","نبتون"],c:2},
+{q:"ما الظاهرة التي تحدث عند مرور القمر بين الأرض والشمس؟",a:["خسوف","كسوف","المد والجزر","الاستطالة"],c:1},
+{q:"ما القوة التي تربط النجوم معاً في المجرة؟",a:["الجاذبية","الطاقة المظلمة","المغناطيسية","الضوء"],c:0},
+{q:"ما أقرب نجم إلى الأرض بعد الشمس؟",a:["النجم القطبي","بروكسيما سنتوري","سيريوس","منكب الجوزاء"],c:1},
+{q:"ماذا يسمى انفجار النجوم الضخمة في نهاية حياتها؟",a:["مستعر أعظم (سوبرنوفا)","قزم أبيض","نجم نيوتروني","ثقب أسود"],c:0}]},
+egypt:{name:'تاريخ مصر',color:'#d97706',q:[
+{q:"من هو الملك الذي وحّد القطرين (الوجه البحري والقبلي)؟",a:["خوفو","الملك مينا","رمسيس الثاني","تحتمس الثالث"],c:1},
+{q:"ما الاسم المصري القديم لمدينة طيبة (الأقصر)؟",a:["منف","واست","هليوبوليس","أون"],c:1},
+{q:"في عهد أي ملك بُني الهرم المدرج في سقارة؟",a:["زوسر","خفرع","خوفو","سنفرو"],c:0},
+{q:"من الملكة التي قامت برحلتها الشهيرة إلى بلاد بونت؟",a:["نفرتيتي","حتشبسوت","كليوباترا","تيتي شري"],c:1},
+{q:"ما المعركة التي واجه فيها رمسيس الثاني الحيثيين؟",a:["مجدو","قادش","حطين","عين جالوت"],c:1},
+{q:"في أي أسرة تم طرد الهكسوس من مصر؟",a:["الأسرة 17","الأسرة 18","الأسرة 12","الأسرة 26"],c:1},
+{q:"ماذا يعني اسم «توت عنخ آمون»؟",a:["الصورة الحية لآمون","قوة الإله آمون","المحبوب من آمون","ملك الأرض"],c:0},
+{q:"ما العاصمة التي أسسها أخناتون وحكم منها؟",a:["منف","طيبة","أخيتاتون","الإسكندرية"],c:2},
+{q:"أي عصر يُعرف بعصر بناة الأهرامات؟",a:["الدولة القديمة","الدولة الوسطى","الدولة الحديثة","العصر المتأخر"],c:0},
+{q:"ما المادة التي استخدمها المصريون القدماء في التحنيط لتجفيف الجسد؟",a:["ملح النطرون","الرماد","الزيوت المعدنية","الجبس"],c:0}]},
+islam:{name:'التاريخ الإسلامي',color:'#059669',q:[
+{q:"في أي عام هجري وقعت غزوة الخندق؟",a:["3 هـ","5 هـ","7 هـ","9 هـ"],c:1},
+{q:"من القائد المسلم الذي لُقّب بـ «سيف الله المسلول»؟",a:["علي بن أبي طالب","خالد بن الوليد","سعد بن أبي وقاص","عمرو بن العاص"],c:1},
+{q:"في عهد أي خليفة نُسخت المصاحف ووُحّد الناس على مصحف واحد؟",a:["أبو بكر الصديق","عمر بن الخطاب","عثمان بن عفان","علي بن أبي طالب"],c:2},
+{q:"ما عاصمة الدولة الأموية؟",a:["المدينة","الكوفة","دمشق","بغداد"],c:2},
+{q:"من الصحابي الذي أشار بحفر الخندق؟",a:["سلمان الفارسي","عمر بن الخطاب","حمزة بن عبد المطلب","أبو بكر"],c:0},
+{q:"في أي معركة استشهد جعفر بن أبي طالب رضي الله عنه؟",a:["مؤتة","تبوك","حنين","خيبر"],c:0},
+{q:"من الخليفة الذي أنشأ الدواوين في الدولة الإسلامية؟",a:["عثمان بن عفان","عمر بن الخطاب","علي بن أبي طالب","معاوية"],c:1},
+{q:"من الخليفة العباسي الذي بنى مدينة بغداد؟",a:["أبو جعفر المنصور","هارون الرشيد","المأمون","السفاح"],c:0},
+{q:"كم استمرت خلافة أبي بكر الصديق رضي الله عنه تقريباً؟",a:["سنتين","4 سنوات","6 سنوات","10 سنوات"],c:0},
+{q:"من الصحابي الذي لُقّب بـ «أمين هذه الأمة»؟",a:["أبو عبيدة بن الجراح","أبو الدرداء","معاذ بن جبل","حذيفة بن اليمان"],c:0}]},
+geo:{name:'الجغرافيا',color:'#0891b2',q:[
+{q:"ما أعمق خندق محيطي في العالم؟",a:["خندق ماريانا","خندق تونغا","خندق بورتوريكو","خندق جاوة"],c:0},
+{q:"أي دولة تملك أطول ساحل في العالم؟",a:["روسيا","أستراليا","كندا","النرويج"],c:2},
+{q:"ما المضيق الذي يفصل بين أوروبا وإفريقيا؟",a:["هرمز","جبل طارق","البوسفور","باب المندب"],c:1},
+{q:"ما عاصمة أستراليا؟",a:["سيدني","ملبورن","كانبرا","بيرث"],c:2},
+{q:"ما البحر الأشد ملوحة والأخفض منسوباً على سطح اليابسة؟",a:["بحر قزوين","البحر الميت","البحر الأسود","البحر الأحمر"],c:1},
+{q:"في أي قارة تقع جبال الأنديز؟",a:["آسيا","أوروبا","أمريكا الجنوبية","إفريقيا"],c:2},
+{q:"أي دولة تُعرف بـ «بلاد الأرز»؟",a:["الأردن","لبنان","سوريا","تركيا"],c:1},
+{q:"ما أطول سلسلة جبال في العالم (معظمها تحت الماء)؟",a:["الهيمالايا","الأنديز","حيد وسط المحيط","الأطلس"],c:2},
+{q:"ما أكبر جزيرة في العالم (دون احتساب القارات)؟",a:["مدغشقر","جرينلاند","بورنيو","غينيا الجديدة"],c:1},
+{q:"ما الخط الذي يقسم الأرض إلى نصفين شمالي وجنوبي؟",a:["خط جرينتش","مدار السرطان","خط الاستواء","مدار الجدي"],c:2}]},
+math:{name:'الرياضيات',color:'#ea580c',q:[
+{q:"ما العدد الأولي الذي يلي 13؟",a:["14","15","17","19"],c:2},
+{q:"كم مجموع الزوايا الداخلية للشكل الخماسي؟",a:["360","540","720","180"],c:1},
+{q:"ما قيمة X في المعادلة 2X + 5 = 15؟",a:["4","5","6","10"],c:1},
+{q:"أي عدد يمثل «النسبة الذهبية» تقريباً؟",a:["1.618","2.718","3.141","1.414"],c:0},
+{q:"أي عدد هو عدد «كامل» (مجموع قواسمه الأصغر منه يساوي العدد نفسه)؟",a:["6","8","10","12"],c:0},
+{q:"ما ناتج 2 أس 5؟",a:["10","25","32","64"],c:2},
+{q:"ما قيمة اللوغاريتم الطبيعي للعدد 1؟",a:["1","0","e","10"],c:1},
+{q:"ما المثلث القائم الزاوية؟",a:["كل زواياه حادة","إحدى زواياه 90 درجة","إحدى زواياه منفرجة","أضلاعه متساوية"],c:1},
+{q:"إذا كان محيط مربع 20 سم، فكم مساحته بالسنتيمتر المربع؟",a:["25","40","100","5"],c:0},
+{q:"ما العدد الزوجي الوحيد الذي هو عدد أولي؟",a:["0","1","2","4"],c:2}]},
+science:{name:'العلوم والعلماء',color:'#be123c',q:[
+{q:"ما الرمز الكيميائي لعنصر الصوديوم؟",a:["S","Na","So","Sd"],c:1},
+{q:"أي كوكب غلافه الجوي معظمه ثاني أكسيد الكربون وهو أشد الكواكب حرارة؟",a:["المريخ","الزهرة","الأرض","عطارد"],c:1},
+{q:"أي عضو يفرز الأنسولين في جسم الإنسان؟",a:["الكبد","المعدة","البنكرياس","المرارة"],c:2},
+{q:"ما وحدة قياس المقاومة الكهربائية؟",a:["فولت","أمبير","أوم","واط"],c:2},
+{q:"ما أسرع شيء في الكون؟",a:["الصوت","الضوء","الإلكترون","النيوترينو"],c:1},
+{q:"ما الغاز الذي يشكل النسبة الأكبر من غلافنا الجوي؟",a:["الأكسجين","ثاني أكسيد الكربون","النيتروجين","الهيدروجين"],c:2},
+{q:"ما العملية التي تنسخ فيها الخلية حمضها النووي؟",a:["التحلل","التضاعف","الانقسام","الانتشار"],c:1},
+{q:"ما الصيغة الكيميائية للماء الثقيل؟",a:["H2O","D2O","HO2","H2O2"],c:1},
+{q:"من مكتشف البنسلين؟",a:["ألكسندر فلمنج","لويس باستور","روبرت كوخ","إدوارد جينر"],c:0},
+{q:"ما التفاعل الذي يولد الطاقة في النجوم؟",a:["الاندماج النووي","الانشطار النووي","الاحتراق الكيميائي","التحلل الإشعاعي"],c:0}]}
+};
+const $=id=>document.getElementById(id);
+let key='',i=0,ans=[];
+const cats=$('cats');
+Object.keys(CATS).forEach(k=>{
+  const b=document.createElement('button');b.type='button';b.className='cat';b.style.setProperty('--c',CATS[k].color);
+  b.innerHTML='<b></b><span>10 أسئلة</span>';b.firstChild.textContent=CATS[k].name;
+  b.onclick=()=>start(k);cats.appendChild(b);
+});
+function show(id){['menu','quiz','result'].forEach(x=>$(x).hidden=x!==id);window.scrollTo({top:0})}
+function start(k){key=k;i=0;ans=[];show('quiz');render()}
+function render(){
+  const d=CATS[key].q[i],done=ans[i]!==undefined;
+  $('cn').textContent=CATS[key].name;
+  $('qc').textContent='سؤال '+(i+1)+' من '+CATS[key].q.length;
+  $('pg').style.width=((i+(done?1:0))/CATS[key].q.length*100)+'%';
+  $('qt').textContent=d.q;
+  const o=$('opts');o.innerHTML='';
+  d.a.forEach((t,n)=>{
+    const b=document.createElement('button');b.type='button';b.className='opt';
+    const s=document.createElement('span');s.textContent=t;const m=document.createElement('span');
+    b.append(s,m);
+    if(done){
+      b.disabled=true;
+      if(n===d.c){b.classList.add('ok');m.textContent='✓'}
+      else if(n===ans[i]){b.classList.add('bad');m.textContent='✗'}
+    }else b.onclick=()=>pick(n);
+    o.appendChild(b);
+  });
+  $('prev').disabled=i===0;
+  $('next').disabled=!done;
+  $('next').textContent=i===CATS[key].q.length-1?'إنهاء':'التالي';
+}
+function pick(n){ans[i]=n;render()}
+$('next').onclick=()=>{if(i<CATS[key].q.length-1){i++;render()}else finish()};
+$('prev').onclick=()=>{if(i>0){i--;render()}};
+$('back').onclick=()=>show('menu');
+$('menuBtn').onclick=()=>show('menu');
+$('again').onclick=()=>start(key);
+function finish(){
+  const t=CATS[key].q.length,s=ans.reduce((a,v,n)=>a+(v===CATS[key].q[n].c?1:0),0);
+  $('score').textContent=s+' / '+t;
+  $('msg').textContent=s===t?'ممتاز! إجابات كاملة.':s>=7?'أداء رائع، استمر.':s>=4?'جيد، حاول مرة أخرى لتحسين نتيجتك.':'لا بأس، أعد المحاولة وستتحسن.';
+  show('result');
+}
+</script>
+</body>
+</html>

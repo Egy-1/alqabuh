@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+Sitemap: (ضع الرابط)/sitemap.xml
+
+# تحسين SEO
+Host: (ضع الرابط )
+Crawl-delay: 2

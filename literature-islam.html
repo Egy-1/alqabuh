@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        
+    <title>الدين الإسلامي والأدب | منصة القبة التعليمية</title>
+    <meta name="description" content="منصة القبة التعليمية - أرشيف الدين الإسلامي والفيديوهات الدعوية وقصص المهتدين.">
+    <meta name="author" content="المهندس محمد عصام الفيومي">
+    
+<!-- ======={ START ICON }========= -->
+    <link rel="manifest" href="icon/site.webmanifest">
+    <link rel="icon" type="image/png" sizes="192x192" href="icon/web-app-manifest-192x192.png">
+    <link rel="apple-touch-icon" href="icon/web-app-manifest-192x192.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icon/favicon-96x96.png">
+    <link rel="icon" type="image/svg+xml" href="icon/favicon.svg">
+    <link rel="shortcut icon" href="icon/favicon.ico">
+<!-- ======={ END ICON }========= -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Reem+Kufi:wght@500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- ربط ملفات الـ CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/literature-islam.css">
+    
+    <meta name="theme-color" content="#0b0f19">
+</head>
+<body class="dark-mode">
+
+    <!-- الهيدر العلوي الموحد -->
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo-area">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="منصة القبة" class="logo-img">
+                    <span class="logo-text">منصة القبة التعليمية</span>
+                </a>
+            </div>
+
+            <!-- التنقل الخاص بشاشات الكمبيوتر -->
+            <nav class="desktop-header-nav">
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="kids.html">الأساسيات</a></li>
+                    <li><a href="tech.html">التكنولوجيا</a></li>
+                    <li><a href="sociology.html">علم الاجتماع</a></li>
+                    <li><a href="literature-islam.html" class="active">الدين الاسلامي</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="tester.html" class="icon-action-btn" title="اختبر ذكاءك"><i class="fas fa-brain"></i></a>
+                <a href="history-egyptoin.html" class="icon-action-btn" title="مصر للمصريين"><i class="fas fa-landmark"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- قسم الدين الإسلامي: أرشيف الفيديوهات -->
+    <section class="ds" id="islam-section" aria-labelledby="ds-h">
+      <div class="ds-in">
+        <h2 class="ds-t" id="ds-h">الدين الإسلامي</h2>
+        <p class="ds-lead">أرشيف مرتب لفيديوهات الدعوة والحوار وقصص من اعتنقوا الإسلام. اختر القسم ثم نوع المحتوى.</p>
+
+        <div class="ds-tabs" id="dsTabs"></div>
+        <div class="ds-tools"><input class="ds-search" id="dsQ" type="search" placeholder="ابحث في العناوين…" aria-label="بحث"></div>
+        <div class="ds-chips" id="dsChips" role="group" aria-label="نوع المحتوى"></div>
+        <div class="ds-count" id="dsCount" aria-live="polite"></div>
+        <div id="dsOut"></div>
+      </div>
+    </section>
+
+    <!-- مشغل الفيديو المدمج على المنصة (دون الانتقال إلى يوتيوب) -->
+    <div class="dm" id="dm" role="dialog" aria-modal="true" aria-label="مشغل الفيديو">
+      <div class="dm-box">
+        <div class="dm-bar"><b id="dmT"></b><button type="button" id="dmX">إغلاق</button></div>
+        <div class="dm-fr" id="dmF"></div>
+        <div class="dm-ft"><a id="dmL" target="_blank" rel="noopener">فتح على يوتيوب</a></div>
+      </div>
+    </div>
+
+    <!-- الفوتر المحترف الموحد -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3>منصة القبة التعليمية</h3>
+                <p>منصة تعليمية مصرية رائدة تهدف لنشر الوعي ومحو الأمية وبناء عقول مستنيرة.</p>
+            </div>
+            
+            <div class="footer-col">
+                <h3>روابط سريعة</h3>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="kids.html">الأساسيات</a></li>
+                    <li><a href="tech.html">التكنولوجيا</a></li>
+                    <li><a href="sociology.html">علم الاجتماع</a></li>
+                    <li><a href="literature-islam.html">الدين الاسلامي</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col" id="social-widget">
+                <h3>تواصل مجتمعي</h3>
+                <div class="social-custom-list">
+                    <a href="https://www.facebook.com/share/1A6ZmYtVdX/" target="_blank" class="social-item facebook">
+                        <i class="fab fa-facebook-f"></i> <span>فيسبوك</span>
+                    </a>
+                    <a href="https://youtube.com/channel/UCWuaWYwaAXgtk9m1BdjxhRA" target="_blank" class="social-item youtube">
+                        <i class="fab fa-youtube"></i> <span>يوتيوب</span>
+                    </a>
+                    <a href="https://itopapp.page.link/android" target="_blank" class="social-item itop-app">
+                        <img src="images/itop.png" alt="I Top" class="itop-icon-img"> <span>تطبيق I Top</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- شريط التنقل السفلي للموبايل -->
+    <div class="bottom-nav-bar">
+        <a href="index.html" class="bottom-nav-item">
+            <i class="fas fa-home"></i>
+            <span>الرئيسية</span>
+        </a>
+        <a href="kids.html" class="bottom-nav-item">
+            <i class="fas fa-book-open"></i>
+            <span>الأساسيات</span>
+        </a>
+        <a href="tech.html" class="bottom-nav-item">
+            <i class="fas fa-microchip"></i>
+            <span>التكنولوجيا</span>
+        </a>
+        <a href="sociology.html" class="bottom-nav-item">
+            <i class="fas fa-users"></i>
+            <span>المجتمع</span>
+        </a>
+        <a href="literature-islam.html" class="bottom-nav-item active">
+            <i class="fas fa-mosque"></i>
+            <span>الإسلام</span>
+        </a>
+    </div>
+
+    <!-- السكربتات -->
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script src="js/main.js"></script>
+    <script src="js/literature-islam.js"></script>
+</body>
+</html>
