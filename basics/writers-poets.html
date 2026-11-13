@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+        
+    <title>أدباء وشعراء مصريين وعرب | منصة القبة التعليمية</title>
+    <meta name="description" content="منصة القبة التعليمية - قسم أدباء وشعراء مصريين وعرب. تعرف على عمالقة الأدب والشعر في تاريخنا الثقافي العريق.">
+    <meta name="author" content="المهندس محمد عصام - منصة القبة التعليمية">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- ربط ملفات الـ CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/writers-poets.css">
+    
+    <link rel="icon" href="../images/logo.png" type="image/png">
+    <meta name="theme-color" content="#0b0f19">
+</head>
+<body class="dark-mode">
+
+    <!-- الهيدر العلوي -->
+    <header class="site-header">
+        <div class="container header-container">
+            <div class="logo-area">
+                <a href="../index.html">
+                    <img src="../images/logo.png" alt="منصة القبة" class="logo-img">
+                    <span class="logo-text">منصة القبة التعليمية</span>
+                </a>
+            </div>
+
+            <nav class="desktop-header-nav">
+                <ul>
+                    <li><a href="../index.html">الرئيسية</a></li>
+                    <li><a href="../kids.html" class="active">الأساسيات</a></li>
+                    <li><a href="../tech.html">التكنولوجيا</a></li>
+                    <li><a href="../sociology.html">علم الاجتماع</a></li>
+                    <li><a href="../literature-islam.html">الدين الاسلامي</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="../tester.html" class="icon-action-btn" title="اختبر ذكاءك"><i class="fas fa-brain"></i></a>
+                <a href="../history-egyptoin.html" class="icon-action-btn" title="مصر للمصريين"><i class="fas fa-landmark"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- الهيدر الخاص بالقسم -->
+    <section class="writers-hero">
+        <div class="container">
+            <a href="../kids.html" class="back-link"><i class="fas fa-arrow-right"></i> العودة إلى الأساسيات</a>
+            <h1><i class="fas fa-feather-alt"></i> أدباء وشعراء مصريين وعرب</h1>
+            <p>عمالقة الفكر والبيان الذين صاغوا وجدان الأمة وثقافتها العريقة</p>
+        </div>
+    </section>
+
+    <!-- محتوى الشخصيات والأقسام -->
+    <main class="writers-main-content">
+        <div class="container">
+            
+            <!-- القسم الأول: عمالقة الأدب والمفكرين المصريين -->
+            <section class="writer-category-section">
+                <h2 class="category-title"><i class="fas fa-book-reader"></i> عمالقة الأدب والمفكرين المصريين</h2>
+                <div class="writers-grid" id="egyptian-writers-grid">
+                    <!-- يتم حقن البيانات ديناميكياً عبر الجافاسكريبت -->
+                </div>
+            </section>
+
+            <!-- القسم الثاني: أعظم الشعراء المصريين (الحديث والنهضة) -->
+            <section class="writer-category-section">
+                <h2 class="category-title"><i class="fas fa-signature"></i> أعظم الشعراء المصريين (عصر النهضة والحديث)</h2>
+                <div class="writers-grid" id="egyptian-poets-grid">
+                    <!-- يتم حقن البيانات ديناميكياً عبر الجافاسكريبت -->
+                </div>
+            </section>
+
+            <!-- القسم الثالث: شعراء العصر الجاهلي -->
+            <section class="writer-category-section">
+                <h2 class="category-title"><i class="fas fa-campground"></i> شعراء العصر الجاهلي</h2>
+                <div class="writers-grid" id="arab-poets-grid">
+                    <!-- يتم حقن البيانات ديناميكياً عبر الجافاسكريبت -->
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- نافذة منبثقة (Modal) لعرض التفاصيل الإضافية -->
+    <div id="writerModal" class="writer-modal-overlay">
+        <div class="writer-modal-card">
+            <button class="modal-close-btn" id="modalCloseBtn"><i class="fas fa-times"></i></button>
+            <div class="modal-header-info">
+                <img id="modalImg" src="" alt="صورة الشخصية" class="modal-profile-img">
+                <div>
+                    <h3 id="modalName"></h3>
+                    <span id="modalLife" class="modal-life-badge"></span>
+                </div>
+            </div>
+            <div class="modal-body-content">
+                <h4><i class="fas fa-info-circle"></i> معلومات تفصيلية عن الشخصية:</h4>
+                <p id="modalBio"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- الفوتر المحترف -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3>منصة القبة التعليمية</h3>
+                <p>منصة تعليمية مصرية رائدة تهدف لنشر الوعي ومحو الأمية وبناء عقول مستنيرة.</p>
+            </div>
+            
+            <div class="footer-col">
+                <h3>روابط سريعة</h3>
+                <ul>
+                    <li><a href="../index.html">الرئيسية</a></li>
+                    <li><a href="../kids.html">الأساسيات</a></li>
+                    <li><a href="../tech.html">التكنولوجيا</a></li>
+                    <li><a href="../sociology.html">علم الاجتماع</a></li>
+                    <li><a href="../literature-islam.html">الدين الاسلامي</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col" id="social-widget">
+                <h3>تواصل مجتمعي</h3>
+                <div class="social-custom-list">
+                    <a href="https://www.facebook.com/share/1A6ZmYtVdX/" target="_blank" class="social-item facebook">
+                        <i class="fab fa-facebook-f"></i> <span>فيسبوك</span>
+                    </a>
+                    <a href="https://youtube.com/channel/UCWuaWYwaAXgtk9m1BdjxhRA" target="_blank" class="social-item youtube">
+                        <i class="fab fa-youtube"></i> <span>يوتيوب</span>
+                    </a>
+                    <a href="https://itopapp.page.link/android" target="_blank" class="social-item itop-app">
+                        <img src="../images/itop.png" alt="I Top" class="itop-icon-img"> <span>تطبيق I Top</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom-bar">
+            <p>الحقوق محفوظة</p>
+        </div>
+    </footer>
+
+    <!-- شريط التنقل السفلي للموبايل -->
+    <div class="bottom-nav-bar">
+        <a href="../index.html" class="bottom-nav-item">
+            <i class="fas fa-home"></i>
+            <span>الرئيسية</span>
+        </a>
+        <a href="../kids.html" class="bottom-nav-item active">
+            <i class="fas fa-book-open"></i>
+            <span>الأساسيات</span>
+        </a>
+        <a href="../tech.html" class="bottom-nav-item">
+            <i class="fas fa-microchip"></i>
+            <span>التكنولوجيا</span>
+        </a>
+        <a href="../sociology.html" class="bottom-nav-item">
+            <i class="fas fa-users"></i>
+            <span>المجتمع</span>
+        </a>
+        <a href="../literature-islam.html" class="bottom-nav-item">
+            <i class="fas fa-mosque"></i>
+            <span>الإسلام</span>
+        </a>
+    </div>
+
+    <!-- استدعاء ملف الـ JS -->
+    <script src="../js/writers-poets.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
