@@ -1,12 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://(رابط_موقعك)/index.html</loc></url>
-  <url><loc>https://(رابط_موقعك)/sociology.html</loc></url>
-  <url><loc>https://(رابط_موقعك)/literature-islam.html</loc></url>
-  <url><loc>https://(رابط_موقعك)/tech.html</loc></url>
-  <url><loc>https://(رابط_موقعك)/kids.html</loc></url>
-  <url><loc>https://(رابط_موقعك)/tester.html</loc></url>
-  <url><loc>https://(رابط_موقعك)/history-egyptoin.html</loc></url>
-  <url><loc>https://(رابط_موقعك)/egypt_army.html</loc></url>
-  <url><loc>https://(رابط_موقعك)/basics_programming.html</loc></url>
+  <!-- الصفحة الرئيسية -->
+  <url>
+    <loc>https://egy-1.github.io/alqabuh/index.html</loc>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- قسم الدين الإسلامي -->
+  <url>
+    <loc>https://egy-1.github.io/alqabuh/literature-islam.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- قسم التكنولوجيا -->
+  <url>
+    <loc>https://egy-1.github.io/alqabuh/tech.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- أساسيات البرمجة -->
+  <url>
+    <loc>https://egy-1.github.io/alqabuh/basics_programming.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- علم الاجتماع -->
+  <url>
+    <loc>https://egy-1.github.io/alqabuh/sociology.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- الأساسيات واللغة وتحدي القراءة -->
+  <url>
+    <loc>https://egy-1.github.io/alqabuh/kids.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- مصر للمصريين والتاريخ -->
+  <url>
+    <loc>https://egy-1.github.io/alqabuh/history-egyptoin.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- الجيش المصري -->
+  <url>
+    <loc>https://egy-1.github.io/alqabuh/egypt_army.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- اختبارات الذكاء -->
+  <url>
+    <loc>https://egy-1.github.io/alqabuh/tester.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
