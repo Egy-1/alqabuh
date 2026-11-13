@@ -1,10 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /admin/
-Disallow: /private/
 
 Sitemap: https://egy-1.github.io/alqabuh/sitemap.xml
-
-# تحسين SEO
-Host: https://egy-1.github.io/alqabuh
-Crawl-delay: 2
