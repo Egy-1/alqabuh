@@ -435,6 +435,16 @@
             renderProgrammingVideos();
         });
     </script>
+    <script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('./sw.js')
+        .then(reg => console.log('Service Worker registered!'))
+        .err(err => console.log('Service Worker failed', err));
+    });
+  }
+    </script>
+    
     <script src="js/main.js"></script>
 </body>
 </html>
