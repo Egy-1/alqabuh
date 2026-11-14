@@ -170,6 +170,18 @@
     <script>
         document.getElementById("year").textContent = new Date().getFullYear();
     </script>
+
+
+    <script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('./sw.js')
+        .then(reg => console.log('Service Worker registered!'))
+        .err(err => console.log('Service Worker failed', err));
+    });
+  }
+    </script>
+    
     <script src="js/main.js"></script>
     <script src="js/tech.js"></script>
 </body>
