@@ -185,3 +185,13 @@ figcaption{font-size:.82rem;color:var(--muted);margin-top:8px}
 
 </body>
 </html>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('./sw.js')
+        .then(reg => console.log('Service Worker registered!'))
+        .err(err => console.log('Service Worker failed', err));
+    });
+  }
+</script>
+
